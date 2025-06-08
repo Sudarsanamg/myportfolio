@@ -7,7 +7,7 @@ export function EducationCard(){
        desc :'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, quibusdam ratione atque culpa optio quia, ut numquam harum rerum, enim consectetur. Id molestias consequatur cum incidunt quis unde accusantium quod!'
     }
     return (
-        <div className="w-3xl border-2 shadow-[0_0_20px_#93c5fd] border-blue-600 p-5">
+        <div className="sm:w-3xl border-2 shadow-[0_0_20px_#93c5fd] border-blue-600 p-5 m-3">
             <div className="flex flex-col">
                 {/* company name */}
                 <span className="font-bold ">{data.school}</span>

@@ -30,19 +30,19 @@ export function IntroCard() {
   }, []);
 
   return (
-    <div className="flex items-center gap-5 p-5">
+    <div className="flex items-center gap-5 p-5 flex-col-reverse sm:flex-row">
       {/* left */}
       <div>
         <div className="flex flex-col">
           {/* greetings */}
-          <span className="text-4xl font-extrabold">Hi , I am</span>
+          <span className="text-base sm:text-lg md:text-xl lg:text-2xlfont-extrabold">Hi , I am</span>
           <span className="text-4xl font-extrabold">Sudarsanam Ganesan</span>
         </div>
         {/* postiton */}
         <div>
           <span className="text-3xl">{position}</span>
         </div>
-        <div className="w-2xl mt-3 text-2xl text-gray-300">
+        <div className="sm:w-2xl mt-3 text-2xl text-gray-300 flex ">
           <span>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
             mollitia totam ea et, at eaque aut. Quasi ullam voluptatem
@@ -67,7 +67,7 @@ export function IntroCard() {
           width={300}
           height={300}
           alt="image"
-          className="rounded-4xl"
+          className="rounded-4xl  "
         />
       </div>
     </div>

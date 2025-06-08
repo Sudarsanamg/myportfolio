@@ -8,12 +8,12 @@ export function ExperienceCard(){
         skills: ['Next js','Tailwind CSS','Git','Express Js','REST API','My SQL','AWS']
     }
     return (
-        <div className="w-3xl border-2 shadow-[0_0_20px_#93c5fd] border-blue-600 p-5">
+        <div className="sm:w-3xl m-3 border-2 shadow-[0_0_20px_#93c5fd] border-blue-600 p-5">
             <div className="flex flex-col">
                 {/* company name */}
-                <span className="font-bold ">{data.company}</span>
-                <span className="font-medium">{data.position}</span>
-                <div className="flex text-sm">
+                <span className="font-bold text-2xl text-violet-300">{data.company}</span>
+                <span className="font-medium text-xl">{data.position}</span>
+                <div className="flex text-lg">
                     <span>{data.start}</span>
                     <span>-</span>
                     <span>{data.end}</span>

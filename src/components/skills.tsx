@@ -37,12 +37,12 @@ export function Skills(){
 
 
     return (
-        <div>
+        <div className="-z-1">
             <div className="flex justify-center">
                 <span className="text-4xl font-bold">Skills</span>
             </div>
             <div className="flex justify-center mt-10" >
-                <div className="flex flex-wrap gap-3 justify-center w-[1000px]">
+                <div className="flex flex-wrap gap-3 justify-center sm:w-[1000px] p-2 ">
                 {skillArray.map((item,index)=>(
                     <div key={index} className="flex items-center border-1 border-gray-100 px-2 py-1 rounded-lg animate-floating shadow-[0_0_7px_#93c5fd]">
                         <img src={item.url} alt="" className="w-[35px] mr-3" />
