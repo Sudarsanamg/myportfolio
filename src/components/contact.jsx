@@ -39,7 +39,7 @@ const handleSubmit = async (e) => {
                 <span className="text-4xl font-bold">Contact Me</span>
             </div>
             <div className="flex justify-center font-semibold px-5 m-5 sm:text-2xl ">
-                <span>Feel free to reach out to me for any questions or opportunities!</span>
+                <span className="">Feel free to reach out to me for any questions or opportunities!</span>
             </div>
             <div className="p-5 border-2 border-gray-300 shadow-[0_0_20px_#93c5fd] mt-5 m-3">
                 <div>Email Me</div>

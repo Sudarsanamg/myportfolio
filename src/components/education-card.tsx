@@ -10,7 +10,7 @@ export function EducationCard(){
         <div className="sm:w-3xl border-2 shadow-[0_0_20px_#93c5fd] border-blue-600 p-5 m-3">
             <div className="flex flex-col">
                 {/* company name */}
-                <span className="font-bold ">{data.school}</span>
+                <span className="font-bold text-xl text-purple-300 ">{data.school}</span>
                 <span className="font-medium">{data.degree}</span>
                 <span>{data.duration}</span>
                 <span>{data.grade}</span>

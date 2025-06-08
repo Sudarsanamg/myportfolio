@@ -35,26 +35,28 @@ export function IntroCard() {
       <div>
         <div className="flex flex-col">
           {/* greetings */}
-          <span className="text-base sm:text-lg md:text-xl lg:text-2xlfont-extrabold">Hi , I am</span>
+          <span className=" text-4xl font-extrabold">Hi , I am</span>
           <span className="text-4xl font-extrabold">Sudarsanam Ganesan</span>
         </div>
         {/* postiton */}
         <div>
-          <span className="text-3xl">{position}</span>
+          <span className="text-3xl text-transparent bg-gradient-to-r  from-[#DB00FF] via-[#931ac8] to-[#8D00FF] bg-clip-text">Full Stack Developer</span>
         </div>
         <div className="sm:w-2xl mt-3 text-2xl text-gray-300 flex ">
           <span>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
-            mollitia totam ea et, at eaque aut. Quasi ullam voluptatem
-            reprehenderit. Natus officiis consectetur animi qui magnam dicta a
-            iste accusantium?
+            As a developer i can able to create a product , and able to optimize it . A fresher
+            finding joy in working on real world applications and travelling around world.
           </span>
         </div>
         <div className="mt-5">
           <button
             className="bg-gradient-to-r from-[#DB00FF] via-[#B200FF] to-[#8D00FF] text-white font-bold
-            px-24 py-3 rounded-lg
+            px-24 py-3 rounded-lg cursor-pointer
             "
+            onClick={() => {
+  window.open('https://drive.google.com/file/d/1SOQcSAWY_mmKQdTXEQg0v2AlBG1qa8oJ/view?usp=sharing', '_blank');
+}}
+
           >
             Check My Resume
           </button>
