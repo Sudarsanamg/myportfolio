@@ -13,7 +13,7 @@ export function IntroCard() {
 
     setInterval(() => {
       i = i % pos.length;
-      let str = pos[i];
+      const str = pos[i];
       let j = 0;
 
       // for(let j=0;j<str.length;j++){
