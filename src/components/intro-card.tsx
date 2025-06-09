@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { assets } from "@/assets";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export function IntroCard() {
   const pos = ["Full Stack Developer"];
