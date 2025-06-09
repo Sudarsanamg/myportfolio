@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 export function IntroCard() {
   const pos = ["Full Stack Developer"];
-  const [position, setPositon] = useState("");
+  // const [position, setPositon] = useState("");
 
   useEffect(() => {
     let i = 0;
