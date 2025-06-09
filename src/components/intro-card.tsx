@@ -2,32 +2,32 @@
 
 import Image from "next/image";
 import { assets } from "@/assets";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 export function IntroCard() {
-  const pos = ["Full Stack Developer"];
+  // const pos = ["Full Stack Developer"];
   // const [position, setPositon] = useState("");
 
-  useEffect(() => {
-    let i = 0;
+  // useEffect(() => {
+  //   let i = 0;
 
-    setInterval(() => {
-      i = i % pos.length;
-      const str = pos[i];
-      let j = 0;
+  //   setInterval(() => {
+  //     i = i % pos.length;
+  //     const str = pos[i];
+  //     let j = 0;
 
       // for(let j=0;j<str.length;j++){
       //     str = str.slice(0,j);
       //     console.log(str);
       //     setPositon(str)
       // }
-      setInterval(() => {
-        setPositon(str.slice(0, j + 1));
-        j++;
-      }, 100);
-      i++;
-    }, 3000);
-  }, []);
+  //     setInterval(() => {
+  //       setPositon(str.slice(0, j + 1));
+  //       j++;
+  //     }, 100);
+  //     i++;
+  //   }, 3000);
+  // }, []);
 
   return (
     <div className="flex items-center gap-5 p-5 flex-col-reverse sm:flex-row">
