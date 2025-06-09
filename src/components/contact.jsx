@@ -36,14 +36,14 @@ const handleSubmit = async (e) => {
     return (
         <div>
             <div className="flex justify-center m-3">
-                <span className="text-4xl font-bold">Contact Me</span>
+                <span className="text-4xl font-bold flex">Contact Me</span>
             </div>
             <div className="flex justify-center font-semibold px-5 m-5 sm:text-2xl ">
                 <span className="">Feel free to reach out to me for any questions or opportunities!</span>
             </div>
-            <div className="p-5 border-2 border-gray-300 shadow-[0_0_20px_#93c5fd] mt-5 m-3">
-                <div>Email Me</div>
-                <div className="flex flex-col sm:w-2xl gap-3">
+            <div className="p-5 border-2 border-gray-300 shadow-[0_0_20px_#93c5fd] mt-5 m-3 flex flex-col items-center ">
+                <div className="font-bold text-2xl mb-5">Email Me</div>
+                <div className="flex flex-col sm:w-2xl gap-3 justify-center">
                     <input type="text"  className="w-full border-2 border-gray-500 rounded-lg px-3 py-2 text-lg" value={name} onChange={(e)=> setName(e.target.value)} placeholder="Enter your Name"/>
                     <input type="text" className="w-full border-2 border-gray-500 rounded-lg px-3 py-2 text-lg" value={email} onChange={(e)=> setEmail(e.target.value)} placeholder="Enter your Email" />
                     <input type="text" className="w-full border-2 border-gray-500 rounded-lg px-3 py-2 text-lg" value={subject}  onChange={(e)=>setSubject(e.target.value)} placeholder="Subject"/>

@@ -2,9 +2,9 @@ export function EducationCard(){
     const data ={
        school :'Dr.NGP institute of Technology',
        degree :'B.E. Computer Science Engineering',
-       duration : 'Nov 2021 - April 2026',
+       duration : 'Nov 2021 - April 2025',
        grade:'7.43 CGPA',
-       desc :'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, quibusdam ratione atque culpa optio quia, ut numquam harum rerum, enim consectetur. Id molestias consequatur cum incidunt quis unde accusantium quod!'
+       desc :'I had Completed my B.E CSE at Dr.NGPIT Coimbatore , Here I have build my foundation for my carrer.  Learned basic programming skills and improved my knowledge in computer science domain .'
     }
     return (
         <div className="sm:w-3xl border-2 shadow-[0_0_20px_#93c5fd] border-blue-600 p-5 m-3">
