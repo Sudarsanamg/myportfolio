@@ -1,12 +1,26 @@
 export function ExperienceCard(){
-    const data ={
-        company :'Barberaa',
-        position : 'Full stack Developer',
-        start : 'Nov 2024',
-        end :'Present',
-        desc:'I worked on full-stack development, focusing on both the backend with Flask and the frontend UI using JavaScript. Additionally, I identified, debugged, and fixed issues to improve application performance and user experience .',
-        skills: ['Next js','Tailwind CSS','Git','Express Js','REST API','My SQL','AWS']
-    }
+const data = {
+  company: "CartRabbit (Humbletree Cloud Pvt Ltd)",
+  position: "Full Stack Developer Intern",
+  start: "Aug 2025",
+  end: "Nov 2025",
+  desc:
+    "Worked on building a Shopify Preorder Extension SaaS using Remix, React, TypeScript, Prisma, and PostgreSQL. Implemented preorder campaign creation, partial and full payment flows, webhook automation, metafield & metaobject integrations, and embedded app UI using Shopify Polaris. Improved code quality, handled complex backend workflows, and optimized the storefront script for performance and reliability.",
+  skills: [
+    "Remix",
+    "React.js",
+    "TypeScript",
+    "Shopify Polaris",
+    "Shopify Admin API",
+    "Prisma ORM",
+    "PostgreSQL (Neon)",
+    "Node.js",
+    "Webhooks",
+    "GraphQL",
+    "Git & GitHub"
+  ]
+}
+
     return (
         <div className="sm:w-3xl m-3 border-2 shadow-[0_0_20px_#93c5fd] border-blue-600 p-5">
             <div className="flex flex-col">

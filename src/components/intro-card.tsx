@@ -54,7 +54,7 @@ export function IntroCard() {
             px-24 py-3 rounded-lg cursor-pointer
             "
             onClick={() => {
-  window.open('https://drive.google.com/file/d/1SOQcSAWY_mmKQdTXEQg0v2AlBG1qa8oJ/view?usp=sharing', '_blank');
+  window.open('https://drive.google.com/file/d/1vVMgQFwx7S0mpZ9RfiMjZxTSvczZbgsl/view?usp=sharing', '_blank');
 }}
 
           >
