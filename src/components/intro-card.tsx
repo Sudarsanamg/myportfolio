@@ -2,32 +2,37 @@
 
 import Image from "next/image";
 import { assets } from "@/assets";
-// import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export function IntroCard() {
-  // const pos = ["Full Stack Developer"];
-  // const [position, setPositon] = useState("");
+  const fullText = "Full Stack Developer";
+  const [position, setPositon] = useState("Full Stack Developer");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [typingSpeed, setTypingSpeed] = useState(250);
 
-  // useEffect(() => {
-  //   let i = 0;
+  useEffect(() => {
+    const handleType = () => {
+      const currentText = fullText;
 
-  //   setInterval(() => {
-  //     i = i % pos.length;
-  //     const str = pos[i];
-  //     let j = 0;
+      setPositon(
+        isDeleting
+          ? currentText.substring(0, position.length - 1)
+          : currentText.substring(0, position.length + 1)
+      );
 
-      // for(let j=0;j<str.length;j++){
-      //     str = str.slice(0,j);
-      //     console.log(str);
-      //     setPositon(str)
-      // }
-  //     setInterval(() => {
-  //       setPositon(str.slice(0, j + 1));
-  //       j++;
-  //     }, 100);
-  //     i++;
-  //   }, 3000);
-  // }, []);
+      setTypingSpeed(isDeleting ? 50 : 150);
+
+      if (!isDeleting && position === currentText) {
+        setTimeout(() => setIsDeleting(true), 2000);
+      } else if (isDeleting && position === "") {
+        setIsDeleting(false);
+      }
+    };
+
+    const timer = setTimeout(handleType, typingSpeed);
+
+    return () => clearTimeout(timer);
+  }, [position, isDeleting, typingSpeed]);
 
   return (
     <div className="flex items-center gap-5 p-5 flex-col-reverse sm:flex-row">
@@ -39,8 +44,11 @@ export function IntroCard() {
           <span className="text-4xl font-extrabold">Sudarsanam Ganesan</span>
         </div>
         {/* postiton */}
-        <div>
-          <span className="text-3xl text-transparent bg-gradient-to-r  from-[#DB00FF] via-[#931ac8] to-[#8D00FF] bg-clip-text">Full Stack Developer</span>
+        <div className="h-12">
+          <span className="text-3xl text-transparent bg-gradient-to-r  from-[#DB00FF] via-[#931ac8] to-[#8D00FF] bg-clip-text">
+            {position}
+          </span>
+          <span className="text-3xl text-transparent bg-gradient-to-r from-[#DB00FF] via-[#931ac8] to-[#8D00FF] bg-clip-text animate-pulse">|</span>
         </div>
         <div className="sm:w-2xl mt-3 text-2xl text-gray-300 flex ">
           <span>
@@ -68,8 +76,10 @@ export function IntroCard() {
           src={assets.images.profile}
           width={300}
           height={300}
-          alt="image"
-          className="rounded-4xl  "
+          alt="Sudarsanam Ganesan - Full Stack Developer"
+          className="rounded-4xl"
+          priority
+          style={{ height: 'auto' }}
         />
       </div>
     </div>
